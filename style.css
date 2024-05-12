@@ -1,0 +1,909 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: #FAFAFA;
+    padding-bottom: 214px;
+}
+
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav{
+    background-color: #fff;
+}
+
+.nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 28px;
+    padding-bottom: 28px;
+}
+
+.nav__up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.nav__down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav__ul {
+    display: flex;
+    list-style-type: none;
+    gap: 50px;
+}
+
+.nav__a {
+    text-decoration: none;
+    font-family: SF Pro Display;
+    font-size: 14px;
+    line-height: 16.71px;
+    text-align: left;
+    color: #343434;
+}
+
+select {
+    border: none;
+    outline: none;
+    width: 90px;
+    height: 34px;
+    border-radius: 3px;
+    gap: 0;
+}
+
+option p {
+    text-decoration: none;
+    font-family: SF Pro Display;
+    font-size: 14px;
+    line-height: 16.71px;
+    text-align: left;
+    color: #343434;
+}
+
+.nav__btn {
+    width: 122px;
+    height: 34px;
+    border-radius: 3px;
+    opacity: 0px;
+    background: #1DD1A1;
+    color: #fff;
+    border: none;
+}
+
+@keyframes example {
+    from {
+        background-color: #1DD1A1;
+    }
+
+    to {
+        background-color: #fff;
+    }
+}
+
+.nav__btn:hover {
+    background-color: #fff;
+    border: #1DD1A1 2px solid;
+    color: #158d6d;
+    animation-name: example;
+    animation-duration: 1s;
+    cursor: pointer;
+}
+
+.nav__btn:active {
+    background-color: #fff;
+    border: #1DD1A1 1px solid;
+    scale: 90%;
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.header__one {
+    font-family: SF Pro Display;
+    font-size: 40px;
+    line-height: 47.73px;
+    margin-bottom: 66px;
+    text-align: left;
+    color: #343434;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    position: relative;
+}
+
+.form__div {
+    position: absolute;
+    width: 3.43px;
+    height: 45.71px;
+    top: 12px;
+    left: 1px;
+    gap: 0px;
+    border-radius: 0px 2px 2px 0px;
+    opacity: 0px;
+    background-color: #1DD1A1;
+    outline: none;
+}
+
+input {
+    height: 68px;
+    width: 400px;
+    border-radius: 6px;
+    border: none;
+    padding-left: 29px;
+}
+
+.down__input {
+    border-top: 1.5px solid #DEECFE;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 36.57px;
+    height: 18.29px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #093b2e;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 13.71px;
+    width: 13.71px;
+    left: 4px;
+    bottom: 2.2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #1DD1A1;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #1DD1A1;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(15px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.form__btn {
+    width: 106px;
+    height: 50px;
+    border-radius: 6px;
+    color: #fff;
+    background: #1DD1A1;
+    border: none;
+}
+
+.form__btn:hover {
+    background-color: #fff;
+    border: #1DD1A1 2px solid;
+    color: #158d6d;
+    animation-name: example;
+    animation-duration: 1s;
+    cursor: pointer;
+}
+
+.form__wrapper {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 35px;
+    margin-top: 17px;
+}
+
+.form__second__wrapper {
+    display: flex;
+    gap: 9.14px;
+}
+
+.form__btn:active {
+    background-color: #fff;
+    border: #1DD1A1 1px solid;
+    scale: 90%;
+}
+
+section {
+    background: #FAFAFA;
+    padding-bottom: 166px;
+}
+
+.section1__title {
+    font-family: SF Pro Display;
+    font-size: 40px;
+    line-height: 47.73px;
+    text-align: left;
+    color: #343434;
+}
+
+.Section1__content {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 239px;
+}
+
+.section__content__title {
+    font-family: SF Pro Display;
+    font-size: 30px;
+    line-height: 35.8px;
+    text-align: left;
+    color: #343434;
+}
+
+.section__content__text {
+    font-family: SF Pro Display;
+    font-size: 20px;
+    line-height: 23.87px;
+    text-align: left;
+    color: #343434;
+    margin-top: 31px;
+}
+
+.Section1__content2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 239px;
+}
+
+.Section1__content3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 239px;
+}
+
+.Section1__content4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 239px;
+}
+
+.section2__title {
+    font-family: SF Pro Display;
+    font-size: 40px;
+    line-height: 47.73px;
+    text-align: left;
+    color: #343434;
+}
+
+.cards {
+    display: flex;
+    gap: 30px;
+}
+
+.card {
+    background-color: #fff;
+    width: 350px;
+    height: 342px;
+    top: 2839px;
+    left: 165px;
+    gap: 0px;
+    border-radius: 4px 0px 0px 0px;
+    opacity: 0px;
+    padding-top: 32px;
+    margin-top: 50px;
+}
+
+.card__title {
+    font-family: SF Pro Display;
+    font-size: 24px;
+    line-height: 28.64px;
+    text-align: left;
+    color: #111111;
+    margin-left: 32px;
+}
+
+.card__titles {
+    display: flex;
+    margin-top: 6px;
+    margin-left: 32px;
+}
+
+.card__second__title {
+    color: #343434;
+    font-family: SF Pro Display;
+    font-size: 18px;
+    line-height: 16.71px;
+    text-align: left;
+}
+
+.card__second__title3 {
+    color: #343434;
+    font-family: SF Pro Display;
+    font-size: 18px;
+    line-height: 16.71px;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.card__second__title2 {
+    color: #1DD1A1;
+    font-family: SF Pro Display;
+    font-size: 18px;
+    line-height: 16.71px;
+    text-align: left;
+    margin-left: 7px;
+}
+
+.card__div {
+    height: 17px;
+    width: 1px;
+    color: #111111;
+}
+
+.card__text {
+    font-family: SF Pro Display;
+    font-size: 14px;
+    line-height: 16.71px;
+    text-align: left;
+    color: #343434;
+    margin-left: 32px;
+}
+
+.card__btn {
+    width: 172px;
+    height: 40px;
+    border-radius: 4px;
+    opacity: 0px;
+    background-color: #1DD1A1;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+    border: none;
+    margin-top: 40px;
+    margin-left: 32px;
+}
+
+.card__btn:hover {
+    background-color: #fff;
+    border: #1DD1A1 2px solid;
+    color: #158d6d;
+    animation-name: example;
+    animation-duration: 1s;
+    cursor: pointer;
+}
+
+.card__btn:active {
+    background-color: #fff;
+    border: #1DD1A1 1px solid;
+    scale: 90%;
+}
+
+.card__div2 {
+    width: 350px;
+    height: 0px;
+    border: 1px;
+    opacity: 0.1px;
+    border: 1px solid #1DD1A1;
+    margin-bottom: 10px;
+    margin-top: 17px;
+}
+
+.section2__second__wrapper {
+    display: flex;
+    margin-top: 222px;
+}
+
+.section2__left__title {
+    font-family: SF Pro Display;
+    font-size: 40px;
+    line-height: 47.73px;
+    text-align: left;
+    color: #343434;
+
+}
+
+.section2__left__text {
+    font-family: SF Pro Display;
+    font-size: 16px;
+    line-height: 19.09px;
+    text-align: left;
+    color: #343434;
+    margin-top: 20px;
+    margin-bottom: 23px;
+}
+
+.section2__left__btn {
+    width: 150px;
+    height: 40px;
+    border-radius: 4px;
+    background: #1DD1A1;
+    color: #fff;
+    border: none;
+}
+
+.section2__left__btn:hover {
+    background-color: #fff;
+    border: #1DD1A1 2px solid;
+    color: #158d6d;
+    animation-name: example;
+    animation-duration: 1s;
+    cursor: pointer;
+}
+
+.section2__left__btn:active {
+    background-color: #fff;
+    border: #1DD1A1 1px solid;
+    scale: 90%;
+}
+
+.section3__wrapper__title {
+    font-family: SF Pro Display;
+    font-size: 40px;
+    line-height: 47.73px;
+    text-align: left;
+    color: #343434;
+    margin-bottom: 50px;
+}
+
+.cards2 {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes example3 {
+    0% {
+        scale: 100%;
+    }
+
+    10% {
+        scale: 101%;
+    }
+
+    20% {
+        scale: 102%;
+    }
+
+    30% {
+        scale: 103%;
+    }
+
+    40% {
+        scale: 104%;
+    }
+
+    50% {
+        scale: 105%;
+    }
+
+    60% {
+        scale: 106%;
+    }
+
+    70% {
+        scale: 107%;
+    }
+
+    80% {
+        scale: 108%;
+    }
+
+    90% {
+        scale: 109%;
+    }
+
+    100% {
+        scale: 110%;
+    }
+}
+
+.card2 {
+    background-color: #fff;
+    width: 330px;
+    height: 470px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.card2:hover {
+    scale: 110%;
+    animation-name: example3;
+    animation-duration: 1s;
+}
+
+.card2__div {
+    width: 350px;
+    height: 6px;
+    border-radius: 4px 4px;
+    background: #1DD1A1;
+    display: none;
+}
+
+@keyframes example2 {
+    0% {
+        width: 0;
+    }
+
+    5% {
+        width: 17px;
+    }
+
+    10% {
+        width: 34px;
+    }
+
+    15% {
+        width: 51px;
+    }
+
+    20% {
+        width: 68px;
+    }
+
+    25% {
+        width: 85px;
+    }
+
+    30% {
+        width: 102px;
+    }
+
+    35% {
+        width: 119px;
+    }
+
+    40% {
+        width: 136px;
+    }
+
+    45% {
+        width: 153px;
+    }
+
+    50% {
+        width: 170px;
+    }
+
+    55% {
+        width: 187px;
+    }
+
+    60% {
+        width: 204px;
+    }
+
+    65% {
+        width: 221px;
+    }
+
+    70% {
+        width: 238px;
+    }
+
+    75% {
+        width: 255px;
+    }
+
+    80% {
+        width: 272px;
+    }
+
+    85% {
+        width: 289px;
+    }
+
+    90% {
+        width: 306px;
+    }
+
+    95% {
+        width: 323px;
+    }
+
+    100% {
+        width: 340px;
+    }
+}
+
+.card2:hover div {
+    display: block;
+    animation-name: example2;
+    animation-duration: 1s;
+}
+
+.card2__title {
+    font-family: SF Pro Display;
+    font-size: 30px;
+    line-height: 35.8px;
+    text-align: left;
+    color: #343434;
+    margin-top: 47px;
+}
+
+.narxlar {
+    font-family: SF Pro Display;
+    font-size: 32px;
+    line-height: 38.19px;
+    text-align: left;
+    color: #343434;
+    margin-top: 40px;
+    margin-bottom: 5px;
+}
+
+.tolov {
+    font-family: SF Pro Display;
+    font-size: 16px;
+    line-height: 19.09px;
+    text-align: left;
+    color: #343434;
+}
+
+.card2__text {
+    font-family: SF Pro Display;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.09px;
+    text-align: center;
+    color: #343434;
+    margin-top: 31px;
+}
+
+.card2__btn {
+    width: 180px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px;
+    color: #1DD1A1;
+    background: #fff;
+    border: #1DD1A1 1px solid;
+    margin-top: 67px;
+}
+
+.card2:hover .card2__btn {
+    width: 180px;
+    height: 40px;
+    border-radius: 4px;
+    background: #1DD1A1;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.card2__btn:active {
+    scale: 85%;
+}
+
+.section3__wrapper2 {
+    padding-top: 147px;
+}
+
+.section3__wrapper2__title {
+    font-family: SF Pro Display;
+    font-size: 40px;
+    line-height: 47.73px;
+    text-align: left;
+    color: #343434;
+    margin-bottom: 60px;
+}
+
+.about__cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__main__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #fff;
+    width: 700px;
+    height: 340px;
+    border-radius: 4px;
+}
+
+.about__main__img {
+    position: absolute;
+    top: -75px;
+}
+
+.about__card__title {
+    font-family: SF Pro Display;
+    font-size: 20px;
+    line-height: 23.87px;
+    text-align: center;
+    color: #000;
+}
+
+.about__card__title2 {
+    font-family: SF Pro Display;
+    font-size: 20px;
+    line-height: 23.87px;
+    text-align: center;
+    color: #1DD1A1;
+}
+
+.about__card__text {
+    font-family: SF Pro Display;
+    font-size: 16px;
+    line-height: 19.09px;
+    text-align: center;
+    color: #343434;
+    margin-top: 28px;
+}
+
+.qoshtirnoq {
+    position: absolute;
+    top: -23px;
+    left: 35px;
+}
+
+.qoshtirnoq2 {
+    position: absolute;
+    bottom: -23px;
+    right: 35px;
+}
+
+.ellpse2_1 {
+    position: absolute;
+    left: -30px;
+    top: 140px;
+}
+
+.chevron-left {
+    position: absolute;
+    left: -27px;
+    top: 145px;
+}
+
+.ellpse2 {
+    position: absolute;
+    right: -30px;
+    top: 140px;
+}
+
+.chevron-right {
+    position: absolute;
+    right: -27px;
+    top: 145px;
+}
+
+.about__card {
+    width: 110px;
+    height: 250px;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.ellipses {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 39px;
+    gap: 12px;
+}
+
+.ellipse1 {
+    width: 12px;
+    height: 12px;
+    border: 1px solid #1DD1A1;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.ellipse3 {
+    width: 12px;
+    height: 12px;
+    background-color: #1DD1A1;
+    border-radius: 50%;
+}
+
+footer {
+    background: #093845;
+}
+
+.footer__wrapper {
+    padding-top: 53px;
+    padding-bottom: 10px;
+}
+
+.footer__up {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__ul {
+    display: flex;
+    list-style-type: none;
+    gap: 48px;
+}
+
+.footer__a {
+    font-family: SF Pro Display;
+    font-size: 16px;
+    line-height: 19.09px;
+    text-align: left;
+    color: #F6FCFA;
+    text-decoration: none;
+}
+
+.socials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+.footer__text {
+    font-family: SF UI Display;
+    font-size: 12px;
+    line-height: 14.32px;
+    text-align: left;
+    color: #F6FCFA;
+    margin-top: 13px;
+}
